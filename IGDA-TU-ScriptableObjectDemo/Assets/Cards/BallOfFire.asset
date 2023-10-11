@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7fc1cd8f3f672478fa13bd71edd805, type: 3}
+  m_Name: BallOfFire
+  m_EditorClassIdentifier: 
+  cardName: Ball of Fire
+  cardDescription: Very original spell that does damage
+  cost: 4
+  cardSprite: {fileID: 21300000, guid: 1223714bfd474d7488de7e7908e8c456, type: 3}
+  numTargets: 1000
+  damage: 6
+  effect: Does 6 fire damage to 1000 people
