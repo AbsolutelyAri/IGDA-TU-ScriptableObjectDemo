@@ -11,7 +11,7 @@ public class SpellCardPrefab : MonoBehaviour
     public TextMeshProUGUI cardManaText;
     public Image cardSprite;
 
-    private SpellCard spellCard;
+    public SpellCard spellCard;
 
     public void SetCard(SpellCard sp)
     {
@@ -20,5 +20,11 @@ public class SpellCardPrefab : MonoBehaviour
         cardNameText.text = sp.cardName;
         cardDescriptionText.text = sp.effect;
         cardManaText.text = sp.cost.ToString();
+    }
+
+    public void CastCard()
+    {
+        spellCard.Cast();
+        gameObject.SetActive(false);
     }
 }

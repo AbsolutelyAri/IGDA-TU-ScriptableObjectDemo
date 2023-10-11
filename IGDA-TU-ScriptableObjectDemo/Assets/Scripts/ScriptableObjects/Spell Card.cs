@@ -8,4 +8,9 @@ public class SpellCard : Card
     public int numTargets = 1;
     public int damage = 1;
     public string effect = "blows up the enemy";
+
+    new public void Cast()
+    {
+        Debug.Log("I cast the devestating spell " + cardName);
+    }
 }

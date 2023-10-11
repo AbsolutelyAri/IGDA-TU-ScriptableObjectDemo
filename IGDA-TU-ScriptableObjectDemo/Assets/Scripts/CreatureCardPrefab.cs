@@ -13,7 +13,7 @@ public class CreatureCardPrefab : MonoBehaviour
     public TextMeshProUGUI cardHealthText;
     public Image cardSprite;
 
-    private CreatureCard creatureCard;
+    public CreatureCard creatureCard;
 
     public void SetCard(CreatureCard cc)
     {
@@ -24,5 +24,11 @@ public class CreatureCardPrefab : MonoBehaviour
         cardManaText.text = cc.cost.ToString();
         cardAttackText.text = cc.attack.ToString();
         cardHealthText.text = cc.health.ToString();
+    }
+
+    public void CastCard()
+    {
+        creatureCard.Cast();
+        gameObject.SetActive(false);
     }
 }

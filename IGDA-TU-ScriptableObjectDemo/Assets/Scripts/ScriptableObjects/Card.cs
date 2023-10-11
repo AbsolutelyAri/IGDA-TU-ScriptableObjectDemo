@@ -11,4 +11,9 @@ public class Card : ScriptableObject
     public int cost = 1;
 
     public Sprite cardSprite;
+
+    public void Cast()
+    {
+        Debug.Log("Wow look its me, the " + cardName);
+    }
 }
